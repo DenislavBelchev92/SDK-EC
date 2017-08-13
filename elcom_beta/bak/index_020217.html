@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ElCom</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--  Core CSS -->
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+  
+  	<!--  Custom CSS -->
+    <link href="css/custom_css.css" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+</head>
+<body>
+<div class="page">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">ElCom</a>
+					
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+
+				</div>
+				
+				
+
+				<div class="collapse navbar-collapse" id="myNavbar">
+				
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group input-group">
+							<input type="text" class="form-control" placeholder="Search..">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+							</span>        
+						</div>
+					</form>
+					
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+					
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+		  
+		<div class="container-fluid text-center">    
+			<div class="row content">
+				<div class="col-sm-2 sidenav">
+					<a href="#verticalNav" class="btn btn-info btn-block visible-xs" data-toggle="collapse">Simple collapsible</a>
+					<div id="verticalNav" class="collapse in visible-lg visible-md visible-sm">
+							<p><a href="#">Link</a></p>
+							<p><a href="#">Link</a></p>
+							<p><a href="#">Link</a></p>
+					</div>
+				</div>
+				
+				<div class="col-sm-8 text-left"> 
+					<div>
+						<h1>Welcome</h1>
+					</div>
+					
+					<hr>
+					
+					<div>
+						<div class="form-group">
+						    <label for="city">Select area:</label>
+							<select class="form-control" id="sel1">
+								<option>София</option>
+								<option>Софийска област</option>
+								<option>Пловдив</option>
+								<option>Варна</option>
+								<option>Бургас</option>
+								<option>Благоевград</option>
+								<option>Велико Търново</option>
+								<option>Видин</option>
+								<option>Враца</option>
+								<option>Габрово</option>
+								<option>Добрич</option>
+								<option>Курджали</option>
+								<option>Кюстендил</option>
+								<option>Ловеч</option>
+								<option>Монтана</option>
+								<option>Пазарджик</option>
+								<option>Перник</option>
+								<option>Плевен</option>
+								<option>Разград</option>
+								<option>Русе</option>
+								<option>Силистра</option>
+								<option>Сливен</option>
+								<option>Смолян</option>
+								<option>Стара Загора</option>
+								<option>Търговище</option>
+								<option>Хасково</option>
+								<option>Шумен</option>
+								<option>Ямбол</option>
+							</select>
+						</div>
+					</div>
+					
+					<hr>
+					
+					<div class="row">
+						<div class="col-sm-12">
+						<!--	<div class="panel panel-default text-left">
+								<div class="panel-body">
+									<div class="well pull-left">
+										<img src="bird.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+									</div>
+								<p contenteditable="true">Status: Active</p>
+								<button type="button" class="btn btn-default btn-sm">
+									<span class="glyphicon glyphicon-thumbs-up"></span> Like
+								</button>     
+								</div>
+							</div> -->
+
+						<div class="page-header page-heading">
+
+						<ol class="breadcrumb pull-right where-am-i">
+						<li><a href="#">Forums</a></li>
+						<li class="active">List of topics</li>
+						</ol>
+						<div class="clearfix"></div>
+						</div>
+						
+						<table class="table forum table-striped">
+							<thead>
+								<tr>
+								<th class="cell-stat"></th>
+								<th>
+								<h3>Important</h3>
+								</th>
+								<th class="cell-stat text-center hidden-xs hidden-sm">Topics</th>
+								<th class="cell-stat text-center hidden-xs hidden-sm">Posts</th>
+								<th class="cell-stat-2x hidden-xs hidden-sm">Last Post</th>
+								</tr>
+								</thead>
+							<tbody>
+								<tr>
+								<td class="text-center"><i class="fa fa-question fa-2x text-primary"></i></td>
+								<td>
+								<h4><a href="#">Frequently Asked Questions</a><br><small>Some description</small></h4>
+								</td>
+								<td class="text-center hidden-xs hidden-sm"><a href="#">9 542</a></td>
+								<td class="text-center hidden-xs hidden-sm"><a href="#">89 897</a></td>
+								<td class="hidden-xs hidden-sm">by <a href="#">John Doe</a><br><small><i class="fa fa-clock-o"></i> 3 months ago</small></td>
+								</tr>
+								<tr>
+								<td class="text-center"><i class="fa fa-exclamation fa-2x text-danger"></i></td>
+								<td>
+								<h4><a href="#">Important changes</a><br><small>Category description</small></h4>
+								</td>
+								<td class="text-center hidden-xs hidden-sm"><a href="#">6532</a></td>
+								<td class="text-center hidden-xs hidden-sm"><a href="#">152123</a></td>
+								<td class="hidden-xs hidden-sm">by <a href="#">Jane Doe</a><br><small><i class="fa fa-clock-o"></i> 1 years ago</small></td>
+								</tr>
+							</tbody>
+						</table>
+						
+						
+						<table class="table forum table-striped">
+							<thead>
+								<tr>
+								<th class="cell-stat"></th>
+								<th>
+								<h3>Suggestions</h3>
+								</th>
+								<th class="cell-stat text-center hidden-xs hidden-sm">Topics</th>
+								<th class="cell-stat text-center hidden-xs hidden-sm">Posts</th>
+								<th class="cell-stat-2x hidden-xs hidden-sm">Last Post</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								<td class="text-center"><i class="fa fa-heart fa-2x text-primary"></i></td>
+								<td>
+								<h4><a href="#">More more more</a><br><small>Category description</small></h4>
+								</td>
+								<td class="text-center hidden-xs hidden-sm"><a href="#">6532</a></td>
+								<td class="text-center hidden-xs hidden-sm"><a href="#">152123</a></td>
+								<td class="hidden-xs hidden-sm">by <a href="#">Jane Doe</a><br><small><i class="fa fa-clock-o"></i> 3 months ago</small></td>
+								</tr>
+								<tr>
+								<td class="text-center"><i class="fa fa-magic fa-2x text-primary"></i></td>
+								<td>
+								<h4><a href="#">Haha</a><br><small>Category description</small></h4>
+								</td>
+								<td class="text-center hidden-xs hidden-sm"><a href="#">6532</a></td>
+								<td class="text-center hidden-xs hidden-sm"><a href="#">152123</a></td>
+								<td class="hidden-xs hidden-sm">by <a href="#">Jane Doe</a><br><small><i class="fa fa-clock-o"></i> 1 years ago</small></td>
+								</tr>
+							</tbody>
+						</table>
+						
+							<table class="table forum table-striped">
+								<thead>
+									<tr>
+									<th class="cell-stat"></th>
+									<th>
+									<h3>Open discussion</h3>
+									</th>
+									<th class="cell-stat text-center hidden-xs hidden-sm">Topics</th>
+									<th class="cell-stat text-center hidden-xs hidden-sm">Posts</th>
+									<th class="cell-stat-2x hidden-xs hidden-sm">Last Post</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+									<td></td>
+									<td colspan="4" class="center">No topics have been added yet.</td>
+									</tr>
+								</tbody>
+							</table>
+  
+			
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-2 sidenav">
+					<div class="well">
+						<p>ADS</p>
+					</div>
+					<div class="well">
+						<p>ADS</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="container-fluid text-center">
+			<p>Footer Text</p>
+		</footer>
+</div>
+		
+</body>
+</html>

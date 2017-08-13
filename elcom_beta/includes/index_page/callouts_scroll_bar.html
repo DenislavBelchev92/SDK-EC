@@ -1,0 +1,126 @@
+					<div class="row">
+						<div class="col-sm-12 col-xs-12">
+						
+						
+							<a id="callout-panel" href="#" >
+								<div class="callout callout-type-1">
+									<div class="row zero-margin">
+										<div class="col-xs-1 zero-padding">
+											<img class="img-responsive callout-img" src="dupka.jpg" alt="">
+										</div>
+										
+										<div class="col-xs-11 zero-padding">
+											<div class="row zero-margin">
+												<div class="col-xs12 zero-padding">
+													<h4 class="callout-topic">Банка ДСК измама с кредитни карти</h4>
+												</div>
+											</div>
+											
+											<div class="row zero-margin">
+												<div class="col-xs-6 zero-padding">
+													<h5 class="callout-area">Велико Търново<h5>
+												</div>
+												
+												<div class="col-xs-6 zero-padding">
+													<button type="button" class="btn btn-info callout-button pull-right">
+															<span class="glyphicon glyphicon-star-empty"></span> 8.8
+													</button> 
+													<button type="button" class="btn btn-info callout-button pull-right">
+														<span class="glyphicon glyphicon-eye-open"></span> 87
+													</button>
+													<button type="button" class="btn btn-info callout-button pull-right">
+														<span class="glyphicon glyphicon-user"></span> 10
+													</button> 
+												</div>
+											</div>
+										</div>
+				
+									</div>
+								</div>
+							</a>
+							
+							
+							<a id="callout-panel" href="#">
+								<div class="callout callout-type-2">
+									<div class="row zero-margin">
+										<div class="col-xs-1 zero-padding">
+											<img class="img-responsive callout-img" src="images/question_mark.jpg">
+										</div>
+										
+										<div class="col-xs-11 zero-padding">
+											<div class="row zero-margin">
+												<div class="col-xs12 zero-padding">
+													<h4 class="callout-topic">Банка ДСК измама с кредитни карти</h4>
+												</div>
+											</div>
+											
+											<div class="row zero-margin">
+												<div class="col-xs-6 zero-padding">
+													<h5 class="callout-area">Велико Търново<h5>
+												</div>
+												
+												<div class="col-xs-6 zero-padding">
+												<button type="button" class="btn btn-info callout-button pull-right">
+														<span class="glyphicon glyphicon-star-empty"></span> 8.8
+													</button> 
+													<button type="button" class="btn btn-info callout-button pull-right">
+														<span class="glyphicon glyphicon-eye-open"></span> 87
+													</button>
+													<button type="button" class="btn btn-info callout-button pull-right">
+														<span class="glyphicon glyphicon-user"></span> 10
+													</button> 
+													
+													
+												</div>
+											</div>
+											
+										</div>
+				
+									</div>
+								</div>
+							</a>
+							
+
+							<div class="issues-scroll-bar">
+								<?php if(1) :?>
+								<?php $area = 'Denis';
+								$query = "SELECT * FROM callout_types WHERE id='1'";
+								$relevant_issues = $callouts_db->select($query);
+
+								$query = "SELECT * FROM users WHERE user_id='1'";
+								$users_returned = $users_register_db->select($query);
+
+								while($user = $users_returned->fetch_assoc()) {
+									echo $user['first_name'];
+								}
+								?>
+								<?php while($issue = $relevant_issues->fetch_assoc()) :?>
+								  <div class="issues">
+									<table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+										<thead>
+											<tr>
+												<th>Номер</th>
+												<th>име</th>
+												<th>Място</th>
+												<th>Създател</th>
+												<th>Тип</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="issue-instance-min">
+												<td><?php echo "TVa e ot Callout databazata" . $issue['id']; ?></td>
+											</tr>
+										</tbody>
+									</table>
+								  </div>
+
+								<?php endwhile;?>
+
+								<?php else :?>
+								<p>Все още няма докладвани проблеми за този град</p>
+
+								<?php endif;?>
+							</div>
+
+						</div>
+					</div>

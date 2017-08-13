@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta http-equiv="Content-Language" content="bg">
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Елком</title>
+
+    <!--  Core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	
+	<!--  Custom CSS -->
+    <link href="css/custom_style.css" rel="stylesheet">
+
+</head>
+<body>
+	<div class="page">
+		<div class="container">
+
+			<div class="container logo-nav-compensate">
+			
+				<div class="row page-topic">
+					<div class="col-lg-12 col-md-12 col-sm-12 pad-remove">
+					
+						<!-- Page topic -->
+						<div class="">
+							<div class="pull-left">
+								<a href="http://localhost" class="elcom-logo">
+									<span class="h1">Elcom</span>
+								</a>
+							</div>
+
+							<!-- User Profile-->
+							<div class="pull-right">
+								<div class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" >
+										<button class="btn btn-primary btn-lg">
+											<span class="glyphicon glyphicon-user"></span>
+										</button>
+									</a>
+									<ul class="dropdown-menu">
+										<li class="disabled"><a href=""> Поща </a></li>
+										<li class="divider"></li>
+										<li><a href="#"> Събития </a></li>
+										<li class="divider"></li>
+										<li><a href="#"> БММ </a></li>
+									</ul>
+								</div>
+							</div>
+										
+							<!-- Report a problem-->
+							<div class="pull-right btn-report">
+								<a href="#" disabled="disabled" class="btn btn-primary btn-lg btn-block">REPORT</a>
+							</div>
+								
+						</div><!-- Page topic -->
+					</div>
+				</div>
+
+					
+				<!-- NAVBAR -->
+				<div class="border-bottom row">
+					<div class="col-lg-12 col-md-12 col-sm-12 pad-remove">
+						<nav class="navbar navbar-default navbar-top-custom">
+							<!-- NAVBAR COLLAPSE-->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-target="#horizontal-navigation" data-toggle="collapse">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								
+								<button type="button" class="navbar-toggle" data-target="#vertical-navigation" data-toggle="collapse">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								
+								
+								<button type="button" class="btn btn-primary visible-xs" data-target="#searchCollapse" data-toggle="collapse">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+	
+							</div>
+							
+
+
+							
+							<div id="horizontal-navigation" class="navbar-collapse collapse pad-remove-navbar">
+								<!-- Horizontal Navigation -->
+								<ul class="nav navbar-nav nav-tabs">
+									<li><a href="#"> Събития </a></li>
+									<li><a href="#">Банан 1</a></li>
+									<li><a href="#">Банан 2</a></li>
+								</ul> <!-- Horizontal Navigation -->
+
+								
+									
+								<!-- Search Bar -->
+								<form class="navbar-form navbar-right visible-lg visible-md visible-sm" role="search">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Search" />
+										<span class="input-group-btn">
+											<button type="submit" class="btn btn-default btn-inline"><span class="glyphicon glyphicon-search"></span></button>
+										</span>
+									</div> <!-- Search Bar -->
+								</form>
+							</div>
+							
+							<!-- Search Bar Collapse -->
+							<div id="searchCollapse" class="collapse">
+								<form  role="search">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Search" />
+										<span class="input-group-btn">
+											<button type="submit" class="btn btn-default btn-inline"><span class="glyphicon glyphicon-search"></span></button>
+										</span>
+									</div> <!-- Search Bar Collapse -->
+								</form>
+							</div>
+						</nav>
+					</div>
+				</div><!-- NAVBAR -->
+			
+			</div>
+			
+			<div class="container">
+			<!-- Vertical Navigation and Main Info Block-->
+			<div class="row">
+				<!-- Vertical Navigation -->
+				
+				
+				
+				<div class="col-lg-2 pad-remove">
+				
+					<div id="vertical-navigation" class="navbar-collapse collapse pad-remove">
+						<!-- Horizontal Navigation -->
+						<ul class="list-group ">
+							<li class="list-group-item"><a href="#">Събития </a></li>
+							<li class="list-group-item"><a href="#">Събития 1</a></li>
+							<li class="list-group-item"><a href="#">Събития 2</a></li>
+						</ul> <!-- Horizontal Navigation -->
+					</div>
+		
+				</div> <!-- Vertical Navigation -->
+				
+				
+				
+				
+				<!-- Main Info Stream Bar -->
+				<div class="col-lg-8">
+					
+					<!-- Map Filter -->
+					<div class="panel panel-default ">
+						<div id="mapFilter" class="panel-body collapse in">
+
+							<object id="BG-map" width="500px" height="326px" type="image/svg+xml" data="ready-map.html">
+							</object>
+						</div>
+						<div class="panel-footer">
+							<button class="btn btn-primary btn-block" data-target="#mapFilter" data-toggle="collapse">
+								<span class="caret"></span>
+							</button>
+						</div>
+
+
+					</div>
+					
+
+					
+					
+					<div class="panel panel-default">
+						MAIN STREAM
+					</div>
+				</div>
+				
+				<!-- Right Info Bar -->
+				<div class="col-lg-2 pad-remove">
+					<div class="panel panel-default">
+						Right Info Bar
+					</div>
+				</div>
+				
+				
+			
+				
+				
+			</div> <!-- Vertical Navigation and Main Info Block-->
+
+			
+		</div>	<!-- Overall container -->
+	</div><!-- Page -->
+	
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./bootstrap/js/bootstrap.js"></script>
+</body>	
+
+</html>	

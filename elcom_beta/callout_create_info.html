@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ElCom</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--  Core CSS -->
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+  
+  	<!--  Custom CSS -->
+    <link href="css/custom_css.css" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+</head>
+<body>
+<div class="page"> 
+
+		<!-- Iclude the navigation bars -->
+		<?php include 'navbar.html' ?>
+				
+<?php
+$to      = "denislavbel@abv.bg";
+$subject = "Fake sendmail test";
+$message = "If we can read this,   it means that our fake Sendmail setup works!";
+
+if(0) {
+	if(mail($to, 'Fake sendmail test', 'If we can read this, it means that our fake Sendmail setup works!','From: denislav.belchev92@gmail.com')) {
+		echo 'Email sent successfully';
+	} else {
+		die('Failure: Email was not sent!');
+	}
+}
+?>
+				
+		<div class="container-fluid">    
+			<div class="row content ">
+				<div class="col-md-6">
+
+					<form>
+						<div class="input-group">
+							<input id="email" type="text" class="form-control" name="type" placeholder="Тип">
+							<a  class="input-group-addon" data-toggle="dropdown">
+								<span class="" ><i class="caret" ></i></span>
+							</a>
+							
+							<ul class="dropdown-menu dropdown-menu-left" style="width: 100%;">
+								<li><a href="#">Насилие и основни права на човека</a></li>
+								<li><a href="#">Здравеопазване</a></li>
+								<li><a href="#">Услуги и потребителски права</a></li>
+								<li><a href="#">Трудово право</a></li>
+								<li><a href="#">Околна среда</a></li>
+								<li><a href="#">Административни проблеми</a></li>
+								<li><a href="#">Образование и култура</a></li>
+								<li><a href="#">Фирми и организации / Бизнес</a></li>
+								<li><a href="#">Инфраструктура (сгради, съоражения)</a></li>
+								<li><a href="#">Инфраструктура (транспорт и пътна мрежа)</a></li>
+								<li><a href="#">Инфраструктура (комуникации)</a></li>
+							</ul>
+					  
+						</div>
+						
+						<br>
+						
+						<div class="input-group">
+							<input id="email" type="text" class="form-control" name="type" placeholder="Вид" disabled>
+							<a  class="input-group-addon" data-toggle="dropdown">
+								<span class="" ><i class="caret" ></i></span>
+							</a>
+							
+							<ul class="dropdown-menu dropdown-menu-left" style="width: 100%;">
+								<li><a href="#">HTML</a></li>
+								<li><a href="#">CSS</a></li>
+								<li><a href="#">JavaScript</a></li>
+							</ul>
+					  
+						</div>
+						
+						<br>						
+						
+						<div class="input-group">
+							<input id="collout_examples_input_field" type="text" class="form-control" name="type" placeholder="Примери">
+							<a  class="input-group-addon" data-toggle="dropdown">
+								<span class="" ><i class="caret" ></i></span>
+							</a>
+							
+							<ul class="dropdown-menu dropdown-menu-left" style="width: 100%;">
+								<li><a href="#">HTML</a></li>
+								<li><a href="#">CSS</a></li>
+								<li><a href="#">JavaScript</a></li>
+							</ul>
+
+						</div>
+						<div id="collout_examples_input_field_options">
+						</div>
+						<br>
+						
+					</form>
+			
+				</div>
+				
+				
+				
+				
+				<div class="col-md-6">
+
+					<form>
+						<div class="input-group">
+							<input id="email" type="text" class="form-control" name="type" placeholder="Област">
+							<a  class="input-group-addon" data-toggle="dropdown">
+								<span class="" ><i class="caret" ></i></span>
+							</a>
+							
+							<ul class="dropdown-menu dropdown-menu-left" style="width: 100%;">
+								<li><a href="#">Насилие и основни права на човека</a></li>
+								<li><a href="#">Здравеопазване</a></li>
+								<li><a href="#">Услуги и потребителски права</a></li>
+								<li><a href="#">Трудово право</a></li>
+								<li><a href="#">Околна среда</a></li>
+								<li><a href="#">Административни проблеми</a></li>
+								<li><a href="#">Образование и култура</a></li>
+								<li><a href="#">Фирми и организации / Бизнес</a></li>
+								<li><a href="#">Инфраструктура (сгради, съоражения)</a></li>
+								<li><a href="#">Инфраструктура (транспорт и пътна мрежа)</a></li>
+								<li><a href="#">Инфраструктура (комуникации)</a></li>
+							</ul>
+					  
+						</div>
+						
+						<br>
+						
+						<div class="input-group">
+							<input id="email" type="text" class="form-control" name="type" placeholder="Район/Община" disabled>
+							<a  class="input-group-addon" data-toggle="dropdown">
+								<span class="" ><i class="caret" ></i></span>
+							</a>
+							
+							<ul class="dropdown-menu dropdown-menu-left" style="width: 100%;">
+								<li><a href="#">HTML</a></li>
+								<li><a href="#">CSS</a></li>
+								<li><a href="#">JavaScript</a></li>
+							</ul>
+					  
+						</div>
+						
+						<br>						
+
+						<div class="input-group">
+							<input id="email" type="text" class="form-control" name="type" placeholder="Населено място" disabled>
+							<a  class="input-group-addon" data-toggle="dropdown">
+								<span class="" ><i class="caret" ></i></span>
+							</a>
+							
+							<ul class="dropdown-menu dropdown-menu-left" style="width: 100%;">
+								<li><a href="#">HTML</a></li>
+								<li><a href="#">CSS</a></li>
+								<li><a href="#">JavaScript</a></li>
+							</ul>
+					  
+						</div>
+						
+						<br>
+						
+					</form>
+			
+				</div>
+				
+				
+			</div>
+		</div>
+		
+		
+		
+		<footer class="container-fluid text-center">
+			<p>Footer Text</p>
+		</footer>
+		
+</div>
+
+
+<script>
+$(document).ready(function(){
+    $("#collout_examples_input_field").focus(function(){
+        $(this).css("background-color", "#cccccc");
+		
+		var request = $.ajax({url: "core/php/ajax/callout_example_options_display.php", 
+				type: "POST",
+				data: {example_form_user_input : "Дупка на пътя"},
+				dataType: "html",
+
+				success: function(result){
+				$("#collout_examples_input_field_options").html(result);},
+
+		});
+		
+		
+		request.fail(function(jqXHR, textStatus) {
+			alert( "Request failed: " + textStatus );
+		});
+	
+    });
+    $("#collout_examples_input_field").blur(function(){
+        $(this).css("background-color", "#ffffff");
+		$("#collout_examples_input_field_options").html('');
+    });
+});
+</script>
+		
+</body>
+</html>

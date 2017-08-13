@@ -1,0 +1,136 @@
+<?php
+include_once "../core/php/init.php";
+
+$callouts_db = new elcom_database('callout_descriptions');
+$users_register_db = new elcom_database('users_register');
+
+?>
+
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+	<title>Admin Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--  Core CSS -->
+	<link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="page"> 
+		<div>
+			<div class="page-header clearfix">
+				<a class="" href="/elcom_beta/index.html">
+					<div class="pull-left btn btn-default btn-lg clearfix">
+						Admin Page
+					</div>
+				</a>
+				<a href="callout_create.html" class="btn btn-success btn-lg pull-left">
+					<span class="glyphicon glyphicon-plus-sign"></span> СЪЗДАЙ 
+				</a>
+			   
+				<?php if(!isset($_GET['login'])) :?>
+
+				<a href="/elcom_beta/login.html?login=1" class="pull-right btn btn-primary btn-lg">
+					<span class="glyphicon glyphicon-log-in"></span> Влез 
+				</a>
+
+				<?php endif;?>
+		
+				<a href="#" class="pull-right btn btn-primary btn-lg">
+					<span class="glyphicon glyphicon-th"></span> Настройки 
+				</a>
+				
+				<form class="hidden-xs pull-right search-bar-top clearfix" style="position: relative; right:5px; top: 6px; " role="search">
+					<div class="form-group input-group">
+						<input type="text" class="form-control" placeholder="Search..">     
+					</div>
+				</form>
+
+
+			</div>
+			
+			<nav class="navbar navbar-default">
+
+				<div class="navbar-header">
+
+					<button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					
+					<a href="#search-bar" data-toggle="collapse" class="visible-xs btn btn-primary btn-lg pull-right">
+						<span class="glyphicon glyphicon-search"></span> 
+					</a>
+				</div>
+				
+
+				
+				<div class="collapse navbar-collapse" id="myNavbar">
+				
+					<ul class="nav nav-tabs nav-justified">
+						<li><a href="#">Навигация</a></li>
+						<li><a href="#">Топ</a></li>
+						<li><a href="#">Навигация</a></li>
+						<li><a href="/elcom_beta/organize_protest.html">Организация на протест</a></li>
+						<li><a href="#">Референдум</a></li>
+						<li><a href="#">За нас</a></li>
+					</ul>
+						
+				</div>
+			</nav>
+
+			<div class="collapse" id="search-bar">
+				<form class=" navbar-form visible-xs" role="search">
+					<div class="form-group input-group">
+						<input type="text" class="form-control" placeholder="Search..">     
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<div class="container-fluid">    
+			<div class="row content">
+
+				<div class="col-sm-10"> 
+					<div>
+						<h1>Admin</h1>
+					</div>
+					
+					<hr>
+
+					<hr>
+
+
+				</div>
+				
+				<div class="col-sm-2">
+				
+
+
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<footer class="container-fluid text-center">
+			<p>Footer Text</p>
+		</footer>
+		
+</div>
+
+
+<script src="js/index.js" type="text/javascript">
+
+</script>
+		
+</body>
+</html>
