@@ -1,0 +1,7 @@
+1. All that will be accessable by the internet should be in public folder.
+ All php includes and privete files like the SQL password should be in other folder called privete or includes or privite/includes.
+client Web server cannot access a folder behind but hte server can.
+DONE sort of done :).
+2. encode the GET variables with mysqli_real_excape_string.
+3. Go over and sanitize with html erntities and mysql real escape.
+4. Make the connections to the 2 databases as GLOBAL.

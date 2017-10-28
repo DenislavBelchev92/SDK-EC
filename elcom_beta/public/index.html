@@ -1,9 +1,9 @@
 <?php
 include_once "core/php/init.php";
 
-$callouts_db = new elcom_database('callout_descriptions');
-$users_register_db = new elcom_database('users_register');
-
+$callouts_db = new callouts_database();
+$users_register_db = new users_database();
+$current_page = "index.html";
 ?>
 
 <!DOCTYPE html>
@@ -53,7 +53,7 @@ $users_register_db = new elcom_database('users_register');
 </div>
 
 
-<script src="js/index.js" type="text/javascript">
+<script src="../js/index.js" type="text/javascript">
 
 </script>
 		

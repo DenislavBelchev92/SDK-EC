@@ -8,10 +8,10 @@
 				<a href="callout_create.html" class="btn btn-success btn-lg pull-left">
 					<span class="glyphicon glyphicon-plus-sign"></span> СЪЗДАЙ 
 				</a>
-			   
-				<?php if(!isset($_GET['login'])) :?>
 
-				<a href="/elcom_beta/login.html?login=1" class="pull-right btn btn-primary btn-lg">
+				<?php if(($current_page !== "login.html") || !$_SESSION['user_is_logged']) :?>
+
+				<a href="/elcom_beta/login.php" class="pull-right btn btn-primary btn-lg">
 					<span class="glyphicon glyphicon-log-in"></span> Влез 
 				</a>
 
