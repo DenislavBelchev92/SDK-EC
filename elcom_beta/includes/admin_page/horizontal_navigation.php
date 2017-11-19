@@ -6,7 +6,7 @@
  * Time: 9:15 AM
  */
 ?>
-<div class="page">
+
     <div>
         <div class="page-header clearfix">
             <a class="" href="index.php">
@@ -20,7 +20,7 @@
 
             <?php if(!isset($_GET['login'])) :?>
 
-            <a href="/elcom_beta/login.php?login=1" class="pull-right btn btn-primary btn-lg">
+            <a href="/elcom_beta/public/login.php?login=1" class="pull-right btn btn-primary btn-lg">
                 <span class="glyphicon glyphicon-log-in"></span> Влез
             </a>
 

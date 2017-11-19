@@ -10,6 +10,7 @@
 
 include $_SERVER['DOCUMENT_ROOT'] . "/elcom_beta/includes/admin_page/header.php";
 
+
 ?>
 <body>
     <div class="page">
@@ -18,20 +19,20 @@ include $_SERVER['DOCUMENT_ROOT'] . "/elcom_beta/includes/admin_page/header.php"
         ?>
 
         <?php
-            /*
-             * Create empty user
-             */
-            $user = new User;
+        /*
+         * Create empty user
+         */
+        $callout = new Lost_And_Found();
 
-            if(isset($_GET['user_selected'])) {
-                $user = User::get_by_username($_GET['user_selected']);
+        if(isset($_GET['selected_callout_id'])) {
+            $callout = Lost_And_Found::get_by_id($_GET['selected_callout_id']);
 
-                $Session->save_user_id_to_modify($user->id);
-                $Session->set_message("Modify user {$user->username}");
+            $Session->save_callout_id_to_modify($callout->id);
+            $Session->set_message("Modify callout with id {$callout->id}");
 
-            } else {
-                $Session->set_message("Modify users");
-            }
+        } else {
+            $Session->set_message("Modify callouts");
+        }
         ?>
 
         <div class="container-fluid">
@@ -43,31 +44,42 @@ include $_SERVER['DOCUMENT_ROOT'] . "/elcom_beta/includes/admin_page/header.php"
                 </div>
 
                 <!-- Start of the main part -->
+
                 <div class="col-sm-10">
                     <div class="container-fluid">
-                        <div class="row">
-                            <?php
-                            echo $Session->display_message(true);
-                            ?>
-                            <div class="col-md-3">
+                        <div class="row" style="margin-top: 5px;">
+                            <div>
                                 <?php
-                                    include_once $_SERVER['DOCUMENT_ROOT'] . "/elcom_beta/includes/admin_page/users/users_scroll_bar.php";
+                                echo $Session->display_message(true);
+                                ?>
+                            </div>
+                            <div>
+                            <?php include  $_SERVER['DOCUMENT_ROOT']."/elcom_beta/includes/common/callout_filters.php" ?>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-5">
+                                <?php
+                                include_once $_SERVER['DOCUMENT_ROOT'] . "/elcom_beta/includes/admin_page/callouts/callouts_scroll_bar.php";
                                 ?>
 
+
                                 <div class="col-sm-offset-4" style="display: inline-block; padding-left: 5px;">
-                                    <a href="add_users.php">
-                                        <button name="add" class="btn btn-default">Add Users</button>
+                                    <a href="add_callouts.php">
+                                        <button name="add" class="btn btn-default">Add Callouts</button>
                                     </a>
                                 </div>
                             </div>
 
-                            <div class="col-md-9">
+                            <div class="col-md-7">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <form class="form-horizontal" action="../../core/php/admin/users_modify.php" method="POST">
+                                        <form class="form-horizontal" id="callout_form" action="../../core/php/admin/callouts_modify.php" method="POST">
                                             <?php
-                                                include_once $_SERVER['DOCUMENT_ROOT'] . "/elcom_beta/includes/admin_page/users/update_users_form.php";
+                                            include_once $_SERVER['DOCUMENT_ROOT'] . "/elcom_beta/includes/admin_page/callouts/update_callouts_form.php";
                                             ?>
+
                                         </form>
                                     </div>
                                 </div>
@@ -81,7 +93,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/elcom_beta/includes/admin_page/header.php"
         <!-- End <div class="container-fluid"> -->
         </div>
         <?php
-        include $_SERVER['DOCUMENT_ROOT'] . "/elcom_beta/includes/common/footer.php";
+        include $_SERVER['DOCUMENT_ROOT'] . "/elcom_beta/includes/admin_page/footer.php";
         ?>
 
     <!-- <div class="page"> -->
